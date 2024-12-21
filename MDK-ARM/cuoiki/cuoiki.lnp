@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"cuoiki\startup_stm32f103xb.o"
+"cuoiki\main.o"
+"cuoiki\stm32f1xx_it.o"
+"cuoiki\stm32f1xx_hal_msp.o"
+"cuoiki\lcd_16x2.o"
+"cuoiki\stm32f1xx_hal_gpio_ex.o"
+"cuoiki\stm32f1xx_hal_tim.o"
+"cuoiki\stm32f1xx_hal_tim_ex.o"
+"cuoiki\stm32f1xx_hal.o"
+"cuoiki\stm32f1xx_hal_rcc.o"
+"cuoiki\stm32f1xx_hal_rcc_ex.o"
+"cuoiki\stm32f1xx_hal_gpio.o"
+"cuoiki\stm32f1xx_hal_dma.o"
+"cuoiki\stm32f1xx_hal_cortex.o"
+"cuoiki\stm32f1xx_hal_pwr.o"
+"cuoiki\stm32f1xx_hal_flash.o"
+"cuoiki\stm32f1xx_hal_flash_ex.o"
+"cuoiki\stm32f1xx_hal_exti.o"
+"cuoiki\stm32f1xx_hal_uart.o"
+"cuoiki\system_stm32f1xx.o"
+--strict --scatter "cuoiki\cuoiki.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "cuoiki.map" -o cuoiki\cuoiki.axf
